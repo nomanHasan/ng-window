@@ -1,0 +1,13 @@
+<ngx-window
+    [windowName]="windowName">
+<h1 class="elegantshadow">NGX WINDOW</h1>
+</ngx-window>
+<app-menu [style.visibility]='visibility'>
+  <app-program (onClick)="clickProgram($event)">
+    <i class="fa fa-folder-open-o"></i>
+    Open Window
+  </app-program>
+</app-menu>
+<app-taskbar>
+  <app-task (onClick)="clickStartButton($event)"><i class="fa fa-tasks"></i></app-task>
+</app-taskbar>

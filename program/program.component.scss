@@ -1,0 +1,11 @@
+.program{
+    border: 2px solid rgba(255, 255, 255, 0.02);
+    // background: linear-gradient(to right, rgba(156, 154, 173, 0.37), rgba(133, 154, 216, 0.42));
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+
+.program:hover{
+    background : linear-gradient(to right, rgba(156, 154, 173, 0.37), rgba(133, 154, 216, 0.42));
+}

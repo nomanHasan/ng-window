@@ -1,0 +1,33 @@
+
+body {
+	overflow: hidden;
+}
+
+#window {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	border: 2px solid rgba(111, 108, 108, 0.01);
+	background: #ffffff;
+    box-shadow:  5px 10px 5px rgba(0, 0, 0, 0.46);
+    overflow: auto;
+}
+
+#titlebar {
+	font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	color: black;
+
+	background: #e2e2e2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #e2e2e2, #fbfbfb, rgba(232, 232, 232, 0.57));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #e2e2e2, #fbfbfb, rgba(232, 232, 232, 0.57));
+
+	
+	text-align: center;
+	cursor: move;
+	
+    i{
+        margin: 0.2rem;
+        float: right;
+        cursor: pointer;
+    }
+}

@@ -1,10 +1,18 @@
 {
-  "name": "ng-window",
+  "name": "ngx-window",
   "version": "1.0.0",
   "description": "A Component Library for Angular 2+. The window component is resizable and movable.",
   "repository": "https://github.com/nomanHasan/ng-window",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular2",
+    "component",
+    "window"
+  ],
+  "bugs": {
+    "url": "https://github.com/nomanHasan/ng-window/issues"
   },
   "author": "",
   "license": "ISC"

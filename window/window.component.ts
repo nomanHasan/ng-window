@@ -1,7 +1,7 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ng-window',
+  selector: 'ngx-window',
   templateUrl: './window.component.html',
   styleUrls: ['./window.component.scss']
 })
@@ -9,6 +9,9 @@ export class WindowComponent implements OnInit {
 
   @Input() width: number = 600;
   @Input() height:number = 400;
+
+  @Input() minWidth: number = 150;
+  @Input() minHeight:number = 100;
 
 
   @Input() top: number = 200;
@@ -139,6 +142,13 @@ export class WindowComponent implements OnInit {
     if(this.isBottomBorder){
       let b = this.top + this.height;
       this.height += event.clientY - b;
+    }
+
+    if(this.height < this.minHeight){
+      this.height = this.minHeight;
+    }
+    if(this.width < this.minWidth){
+      this.width = this.minWidth;
     }
   }
 
